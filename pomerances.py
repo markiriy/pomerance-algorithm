@@ -30,7 +30,7 @@ def pomerance_algorithm(limit):
     return result
 
 
-limits = [2**13 ,10**8]  # Разные лимиты для анализа времени выполнения
+limits = [10**6 ,10**8]  # Разные лимиты для анализа времени выполнения
 
 for i in limits:
     psp_numbers = pomerance_algorithm(i)
@@ -47,8 +47,8 @@ for limit in limits:
 # Построение графика времени выполнения
 plt.figure(figsize=(8, 6))
 plt.plot(limits, execution_times, marker='o', color='b', linestyle='-', linewidth=2, markersize=8)
-plt.xlabel('Limit of Numbers')
+plt.xlabel('Number Limit')
 plt.ylabel('Execution Time (seconds)')
-plt.title('Execution Time vs. Limit of Numbers')
+plt.title('Execution Time vs. Number Limit')
 plt.grid(True)
 plt.show()
