@@ -1,5 +1,4 @@
-# The algorithm of Pomerance et al. 
-# Calculations of spsp numbers.
+# The algorithm of Pomerance et al. Calculations of spsp numbers.
 
 **The algorithm consists of three stages. 
 At the first stage, the sieve of Eratosthenes is performed on an interval bounded by a certain number B, and all primes are eliminated.
